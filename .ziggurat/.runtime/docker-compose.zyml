@@ -1,0 +1,4 @@
+name: ziggurat-onlyoffice
+
+include:
+  - path: ../../docker-compose.yml
