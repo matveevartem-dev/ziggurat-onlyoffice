@@ -1,6 +1,6 @@
 $TTL 86400
 ; ==============================================================================
-;  [Ziggurat OS] ABSOLUTE FQDN ZONE SPECIFICATION (v1783)
+;  [Ziggurat OS] ABSOLUTE FQDN ZONE SPECIFICATION (v1835)
 ;  FQDN Path Target: onlyoffice.ziggurat.ae.
 ; ==============================================================================
 @   IN  SOA ns1.onlyoffice.ziggurat.ae. admin.onlyoffice.ziggurat.ae. (
@@ -12,5 +12,8 @@ $TTL 86400
 
 @   IN  NS  ns1.onlyoffice.ziggurat.ae.
 
-ns1.onlyoffice.ziggurat.ae. IN  A   172.23.0.1
-onlyoffice.ziggurat.ae.     IN  A   172.23.0.1
+; ==============================================================================
+; ДИНАМИЧЕСКИЙ АРХИТЕКТУРНЫЙ ИHЖЕКТ IP v1835
+; ==============================================================================
+ns1.onlyoffice.ziggurat.ae. IN  A   ${ZOS_SDN_GATEWAY}
+onlyoffice.ziggurat.ae.     IN  A   ${ZOS_SDN_GATEWAY}
