@@ -15,5 +15,5 @@ $TTL 86400
 ; ==============================================================================
 ; ДИНАМИЧЕСКИЙ АРХИТЕКТУРНЫЙ ИHЖЕКТ IP v1835
 ; ==============================================================================
-ns1.onlyoffice.ziggurat.ae. IN  A   ${ZOS_SDN_GATEWAY}
-onlyoffice.ziggurat.ae.     IN  A   ${ZOS_SDN_GATEWAY}
+ns1.onlyoffice.ziggurat.ae. IN  A   ${zos_sdn_gateway}
+onlyoffice.ziggurat.ae.     IN  A   ${zos_sdn_gateway}
