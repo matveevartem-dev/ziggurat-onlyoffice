@@ -825,8 +825,8 @@ start_process documentserver-flush-cache.sh -r false
 #    -sha256 -days 3650 -nodes \
 #    -subj "/C=RU/ST=Moscow/L=Moscow/O=PerevodPravo/OU=PerevodPravo/CN=$ONLYOFFICE_NAME"
 
-echo $LOCAL_INTERFACE_IP tcrm.test >> /etc/hosts
-echo $LOCAL_INTERFACE_IP onlyoffice.tcrm.test >> /etc/hosts
+echo $LOCAL_INTERFACE_IP crm.legacy.lan >> /etc/hosts
+echo $LOCAL_INTERFACE_IP onlyoffice.legacy.lan >> /etc/hosts
 
 # nginx used as a proxy, and as data container status service.
 # it run in all cases.
