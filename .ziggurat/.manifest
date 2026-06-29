@@ -1,5 +1,11 @@
-[MODE]
-export
+; ==============================================================================
+;  [Ziggurat OS] TERMINAL SERVICE DNA BLUEPRINTS SPECIFICATION (v2330)
+;  Path: layers/services/onlyoffice/.ziggurat/.manifest
+; ==============================================================================
 
-[ROADMAP]
-docker-compose.yml
+[MODE]
+sections = ALL
+scope = all
+
+[SERVICES]
+layers = local
