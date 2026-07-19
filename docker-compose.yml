@@ -10,8 +10,8 @@ name: ${COMPOSE_PROJECT_NAME:-ziggurat-os}
 services:
   onlyoffice-documentserver:
     build:
-      context: ./
-      dockerfile: ./Dockerfile
+      context: ${PWD}/layers/services/onlyoffice
+      dockerfile: ${PWD}/layers/services/onlyoffice/Dockerfile
     container_name: ziggurat-onlyoffice-documentserver
     depends_on:
       - onlyoffice-postgresql
@@ -39,6 +39,8 @@ services:
     stdin_open: true
     restart: always
     stop_grace_period: 60s
+    ports:
+      - ${ZOS_ONLYOFFICE_PORT}:80  
     volumes:
       - ../../volumes/shared-documents:/shared
       - ../../volumes/onlyoffice:/shared
