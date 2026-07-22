@@ -48,6 +48,8 @@ services:
       - ../../volumes/onlyoffice/public:/var/www/onlyoffice/documentserver-example/public/files
       - /var/log/onlyoffice
       - /usr/share/fonts
+    extra_hosts:
+      - crm.legacy.lan:${ZOS_SDN_LEGACY_GATEWAY}
     networks:
       - ziggurat-net
 

@@ -2,14 +2,14 @@ $TTL 86400
 ; ==============================================================================
 ;  [Ziggurat OS] ABSOLUTE FQDN ZONE SPECIFICATION (v1842)
 ; ==============================================================================
-@   IN  SOA ns1.onlyoffice.ziggurat.ae. admin.onlyoffice.ziggurat.ae. (
+@   IN  SOA ns1.onlyoffice.ziggurat.lan. admin.onlyoffice.ziggurat.lan. (
             2026062404 ; Serial
             3600       ; Refresh
             1800       ; Retry
             604800     ; Expire
             86400 )    ; Minimum TTL
 
-@   IN  NS  ns1.onlyoffice.ziggurat.ae.
+@   IN  NS  ns1.onlyoffice.ziggurat.lan.
 
-ns1.onlyoffice.ziggurat.ae. IN  A   ${ZOS_SDN_SYS_GATEWAY}
-onlyoffice.ziggurat.ae.     IN  A   ${ZOS_SDN_SYS_GATEWAY}
+ns1.onlyoffice.ziggurat.lan. IN  A   ${ZOS_SDN_SYS_GATEWAY}
+onlyoffice.ziggurat.lan.     IN  A   ${ZOS_SDN_SYS_GATEWAY}
