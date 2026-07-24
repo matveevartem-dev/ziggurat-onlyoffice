@@ -1,6 +1,6 @@
 ; ==============================================================================
 ;  [Ziggurat OS] TERMINAL SERVICE DNA BLUEPRINTS SPECIFICATION (v2361)
-;  Path: layers/services/onlyoffice/.ziggurat/.manifest
+;  Path: /layers/services/onlyoffice/.ziggurat/.manifest
 ; ==============================================================================
 
 [mode]
@@ -11,5 +11,5 @@ scope = all
 rootfs = true
 
 [services]
-source = local
+source = none
 layers = none
